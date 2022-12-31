@@ -31,7 +31,7 @@ const server = app.listen(port, console.log(`chatbook server is running on port 
 const io = require('socket.io')(server, {
   pingTimeout: 60000,
   cors:{
-    origin: 'http://localhost:3000'
+    origin: 'https://chatbook-client.onrender.com/'
   }
 })
 
